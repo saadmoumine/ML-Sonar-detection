@@ -43,7 +43,7 @@ scores = cross_val_score(model, X_scaled, Y, cv=5)
 print("Cross-validated accuracy:", scores.mean())
 
 input_data = (0.0079,0.0086,0.0055,0.0250,0.0344,0.0546,0.0528,0.0958,0.1009,0.1240,0.1097,0.1215,0.1874,0.3383,0.3227,0.2723,0.3943,0.6432,0.7271,0.8673,0.9674,0.9847,0.9480,0.8036,0.6833,0.5136,0.3090,0.0832,0.4019,0.2344,0.1905,0.1235,0.1717,0.2351,0.2489,0.3649,0.3382,0.1589,0.0989,0.1089,0.1043,0.0839,0.1391,0.0819,0.0678,0.0663,0.1202,0.0692,0.0152,0.0266,0.0174,0.0176,0.0127,0.0088,0.0098,0.0019,0.0059,0.0058,0.0059,0.0032)
-
+#//input data is an example of the data that we want to predict
 input_data_np = np.asarray(input_data)
 
 input_data_reshaped = input_data_np.reshape(1,-1)  #//reshaping the input data
